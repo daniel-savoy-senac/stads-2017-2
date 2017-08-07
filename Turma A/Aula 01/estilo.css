@@ -1,0 +1,23 @@
+p {
+  color: red;
+  background: green;
+  font-size: 50px;
+  width: 400px;
+  transition: 1s;
+}
+
+body:hover p {
+  color: white;
+  background: pink;
+  width: 800px;
+}
+
+body {
+  background: yellow;
+  font-family: Verdana, sans-serif;
+  transition: 1s;
+}
+
+body:hover {
+  background: black;
+}
