@@ -3,7 +3,7 @@ p {
   background: green;
   font-size: 50px;
   width: 400px;
-  transition: 1s;
+  transition: 2s;
 }
 
 body:hover p {
