@@ -8,8 +8,10 @@ function soma(a, b=10){
 }
 
 var teste = function(evt){
-  let resultado = soma(evt.x,evt.y);
-  console.log(resultado);
+  let largura = window.innerWidth;
+  let cor = `rgb(${evt.x},0,0)`;
+  console.log(cor);
+  document.body.style.background = cor;
 }
 
 window.addEventListener("click", teste);
