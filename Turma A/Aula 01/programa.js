@@ -7,8 +7,8 @@ function soma(a, b=10){
   return a + b;
 }
 
-var teste = function(){
-  let resultado = soma(10,50);
+var teste = function(evt){
+  let resultado = soma(evt.x,evt.y);
   console.log(resultado);
 }
 
