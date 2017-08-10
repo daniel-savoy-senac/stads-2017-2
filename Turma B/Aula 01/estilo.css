@@ -1,6 +1,11 @@
 p {
   color: red;
   background: black;
+  transition: 1s;
+}
+
+body:hover p{
+  transform: rotate(720deg);
 }
 
 body {
