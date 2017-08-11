@@ -1,6 +1,6 @@
 p {
   color: red;
-  background: black;
+  background: hsl(120, 10%, 20%);
   transition: 1s;
 }
 
@@ -9,5 +9,5 @@ body:hover p{
 }
 
 body {
-  background: gray;
+  background: rgb(255,0,255);
 }
