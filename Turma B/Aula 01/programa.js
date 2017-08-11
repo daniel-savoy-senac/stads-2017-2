@@ -7,4 +7,4 @@ function colorir(evt){
   document.body.style.background = `rgb(${r},0,0)`;
 }
 
-window.addEventListener("click", colorir);
+window.addEventListener("mousemove", colorir);
