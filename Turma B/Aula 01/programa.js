@@ -1,5 +1,6 @@
 function colorir(evt){
-  console.log(evt);
+  let x = evt.x;
+  let y = evt.y;
   document.body.style.background = "red";
 }
 
