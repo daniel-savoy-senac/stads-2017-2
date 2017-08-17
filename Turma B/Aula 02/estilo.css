@@ -1,0 +1,19 @@
+p {
+  color: green;
+}
+
+#t02 {
+  color: red;
+}
+
+.feio {
+  background: gray;
+}
+
+div p {
+  background: red;
+}
+
+article p#t03.feio.especial {
+  font-size: 30px;
+}
