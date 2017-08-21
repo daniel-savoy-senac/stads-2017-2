@@ -1,4 +1,17 @@
+@keyframes pular {
+  0% {
+    top: 100px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0px;
+    transform: rotate(720deg);
+  }
+}
+
 section {
+  animation: pular .5s infinite alternate;
+  position: fixed;
   background: hsl(200, 50%, 70%);
   width: 100px;
   height: 100px;
@@ -15,4 +28,12 @@ section {
   border-color: red green blue hsl(180, 100%, 50%);
   border-style: solid;
   border-width: 10px 20px 50px 3px;
+
+  text-transform: uppercase;
+  box-shadow: 10px 10px 15px #000;
+  text-shadow: 2px 2px 4px #000000;
+  transform: rotate(30deg);
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 15px;
 }
