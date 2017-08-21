@@ -1,0 +1,18 @@
+section {
+  background: hsl(200, 50%, 70%);
+  width: 100px;
+  height: 100px;
+  /* padding: 20px; */
+  /* padding: 10px 30px; */
+  /* padding: 0px 20px 50px 30px; */
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  text-align: center;
+
+  border-color: red green blue hsl(180, 100%, 50%);
+  border-style: solid;
+  border-width: 10px 20px 50px 3px;
+}
