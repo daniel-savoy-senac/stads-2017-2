@@ -12,15 +12,15 @@
 }
 
 section {
-  animation: pular 2s infinite alternate;
+  /*animation: pular 2s infinite alternate;
   position: fixed;
   background: hsl(200, 50%, 70%);
   width: 100px;
-  height: 100px;
+  height: 100px;*/
   /* padding: 20px; */
   /* padding: 10px 30px; */
   /* padding: 0px 20px 50px 30px; */
-  padding-top: 30px;
+  /*padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -37,5 +37,18 @@ section {
   transform: rotate(30deg);
   opacity: 0.5;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 15px;*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: green url("https://vignette2.wikia.nocookie.net/rickandmorty/images/1/1e/Rick_and_morty_icon.png/revision/latest?cb=20150805041642");
+  background-size: cover;
+  text-align: center;
+  transition: 1s;
+  box-shadow: 10px 10px 15px #ccc;
+}
+
+section:hover{
+  border-radius: 0%;
+  box-shadow: 2px 2px 2px #333;
 }
