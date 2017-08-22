@@ -1,16 +1,18 @@
 @keyframes pular {
   0% {
     top: 100px;
-    transform: rotate(0deg);
+    left: 0px;
+    transform: rotate(0deg) skewX(-20deg);
   }
   100% {
     top: 0px;
-    transform: rotate(720deg);
+    left: 300px;
+    transform: rotate(180deg) skewX(45deg);
   }
 }
 
 section {
-  animation: pular .5s infinite alternate;
+  animation: pular 2s infinite alternate;
   position: fixed;
   background: hsl(200, 50%, 70%);
   width: 100px;
