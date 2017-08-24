@@ -4,5 +4,35 @@ html, body{
 }
 
 section {
+  background-image:url("https://vignette2.wikia.nocookie.net/rickandmorty/images/1/1e/Rick_and_morty_icon.png/revision/latest?cb=20150805041642"),
+              url("http://vignette4.wikia.nocookie.net/rickandmorty/images/f/f4/Rick_and_Morty_Logo_and_Image.png/revision/latest?cb=20151017201849")
+              ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  padding: 20px;
+  /* padding: 10px 60px; */
+  /* padding: 0px 30px 40px 120px; */
+  /*padding-top: 100px;
+  padding-right: 10px;
+  padding-bottom: 10px;*/
+  /*padding-left: 10px;
+  margin: 30px 5px;
+  border: transparent 10px solid;
+  border-color: green blue rgb(130,0,90) hsl(60,100%,50%);
+  border-width:  10px 30px 100px 50px;*/
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   background: red;
+  border-radius: 50%;
+  transform: rotate(45deg) scale(1);
+  transition: 5s;
+}
+
+img:hover {
+  transform: rotate(720deg) scale(1.2);
 }
