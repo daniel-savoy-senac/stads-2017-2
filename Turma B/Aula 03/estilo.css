@@ -1,9 +1,20 @@
+@keyframes pular {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 200px;
+  }
+}
+
 html, body{
   padding: 0;
   margin: 0;
 }
 
 section {
+  position: fixed;
+  animation: pular 1s .5s infinite alternate forwards;
   background-image:url("https://vignette2.wikia.nocookie.net/rickandmorty/images/1/1e/Rick_and_morty_icon.png/revision/latest?cb=20150805041642"),
               url("http://vignette4.wikia.nocookie.net/rickandmorty/images/f/f4/Rick_and_Morty_Logo_and_Image.png/revision/latest?cb=20151017201849")
               ;
@@ -24,17 +35,20 @@ section {
 }
 
 img {
+  position: fixed;
   width: 100px;
   height: 100px;
   object-fit: cover;
   background: red;
   border-radius: 50%;
-  transform: rotate(45deg) scale(1);
-  transition: 5s;
+  transform: rotateY(45deg) scale(1);
+  transition: 1s;
+  animation: pular 1s infinite alternate forwards;
 }
 
 img:hover {
-  transform: rotate(720deg) scale(1.2);
+  transform: rotateY(720deg) scale(1.2);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 section::after{
