@@ -36,3 +36,7 @@ img {
 img:hover {
   transform: rotate(720deg) scale(1.2);
 }
+
+section::after{
+  content: "IMAGEM: ";
+}
