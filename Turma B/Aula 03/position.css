@@ -3,10 +3,14 @@ body *{
 }
 
 div:first-of-type{
-  bottom: 0px;
-  margin-bottom: -40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  /*margin-left: -25px;
+  margin-top: -25px;*/
   position: absolute;
-
   border: red 2px solid;
 }
 
