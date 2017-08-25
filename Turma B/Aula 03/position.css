@@ -3,6 +3,10 @@ body *{
 }
 
 div:first-of-type{
+  bottom: 0px;
+  margin-bottom: -40px;
+  position: absolute;
+
   border: red 2px solid;
 }
 
@@ -12,11 +16,13 @@ div{
 }
 
 article{
+
   width: 200px;
   height: 200px;
 }
 
 section{
+position: relative;
   width: 400px;
   height: 400px;
 }
