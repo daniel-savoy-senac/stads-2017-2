@@ -1,0 +1,22 @@
+body *{
+  background: rgba(0,0,0,.25);
+}
+
+div:first-of-type{
+  border: red 2px solid;
+}
+
+div{
+  width: 50px;
+  height: 50px;
+}
+
+article{
+  width: 200px;
+  height: 200px;
+}
+
+section{
+  width: 400px;
+  height: 400px;
+}
