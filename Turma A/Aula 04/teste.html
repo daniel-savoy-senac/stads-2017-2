@@ -10,7 +10,7 @@
       function imprimir() {
         let param = new URLSearchParams(window.location.search);
         param.forEach((v,n) => {
-          let linha = document.createElement("p");
+          let linha = document.createElement("h2");
           linha.textContent = `${n} : ${v}`;
           document.body.appendChild(linha);
         });
