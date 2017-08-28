@@ -4,5 +4,18 @@
     <title>Formulários HTML</title>
     <meta charset="utf-8"/>
   </head>
-  <body>FUNCIONOU!!!</body>
+  <body>
+    <h1>FUNCIONOU!!!</h1>
+    <script type="text/javascript">
+      function imprimir() {
+        let param = new URLSearchParams(window.location.search);
+        param.forEach((v,n) => {
+          let linha = document.createElement("p");
+          linha.textContent = `${n} : ${v}`;
+          document.body.appendChild(linha);
+        });
+      }
+      window.addEventListener("load", imprimir);
+    </script>
+  </body>
 </html>
