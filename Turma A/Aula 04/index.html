@@ -15,7 +15,33 @@
               id="query"
               title="O que você quer?"
               name="q" />
-      <button>OK</button>
+
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" value="M" name="sexo" id="masc"/>
+        <label for="masc">Masculino</label>
+        <input type="radio" value="F" name="sexo" id="fem"/>
+        <label for="fem">Feminino</label>
+      </fieldset>
+
+      <label for="fruta">Escolha</label>
+      <select name="fruta" id="fruta" multiple>
+        <option value="1">Maçã</option>
+        <option value="1">Laranja</option>
+        <option value="1">Limão</option>
+        <option value="1">Abacaxi</option>
+      </select>
+
+      <label>MSG</label>
+      <textarea name="msg" placeholder="Escreva aqui">
+      </textarea>
+
+      <input type="hidden" name="escondido" value="XXX"/>
+
+      <button type="button" onclick="alert('HAHAHAH')">Alert</button>
+      <button type="reset">Limpar</button>
+      <button type="submit">OK</button>
+
     </form>
   </body>
 </html>
