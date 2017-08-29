@@ -1,0 +1,5 @@
+URL da Página:
+https://www.shoppingXYZ.com.br/home/promocao.html
+
+URL de Destino:
+https://sistema.XYZ.com/pomocoes/#crianca?nome=Lucas&sobrenome=Silva&sexo=M&end=Rua+Abc+411&cidade=Osasco&uf=SP&presentes=Carrinho&presentes=Bola&presentes=PlayStation5&presentes=Massinha&resposta=porque+sim&aceitatermo=true&cor=#ff0000&nascimento=2010-12-01
