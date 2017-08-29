@@ -3,12 +3,19 @@
   <head>
     <title>Formulários HTML</title>
     <meta charset="utf-8"/>
+    <link href="estilo.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
     <form action="teste.html">
-      <input name="q" />
+      <!-- text, password, checkbox, radio, file -->
+      <!-- color, date, time, number, range  -->
+      <label for="query">Busca</label>
+      <input  type="text"
+              value="banana"
+              id="query"
+              title="O que você quer?"
+              name="q" />
       <button>OK</button>
     </form>
-    <a href="https://www.google.com.br/search?q=girafa">Teste</a>
   </body>
 </html>
