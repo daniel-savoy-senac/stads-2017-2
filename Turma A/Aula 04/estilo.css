@@ -1,5 +1,7 @@
 label{
-  display: block;
+  display: inline-block;
+  width: 300px;
+  border-bottom: #666 1px dashed;
 }
 
 label::after{
