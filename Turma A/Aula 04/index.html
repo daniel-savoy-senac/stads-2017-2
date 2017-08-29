@@ -6,11 +6,11 @@
     <link href="estilo.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
-    <form action="teste.html">
+    <form action="teste.html" method="get">
       <!-- text, password, checkbox, radio, file -->
       <!-- color, date, time, number, range  -->
       <label for="query">Busca</label>
-      <input  type="text"
+      <input  type="password"
               value="banana"
               id="query"
               title="O que você quer?"
@@ -33,8 +33,7 @@
       </select>
 
       <label>MSG</label>
-      <textarea name="msg" placeholder="Escreva aqui">
-      </textarea>
+      <textarea name="msg" placeholder="Escreva aqui"></textarea>
 
       <input type="hidden" name="escondido" value="XXX"/>
 
