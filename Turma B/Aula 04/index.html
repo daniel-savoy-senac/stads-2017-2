@@ -12,17 +12,57 @@
 
       <form action="http://www.google.com.br/search">
 
-        <label>Busca</label>
+        <input id="rm" type="radio" value="M" name="sexo"/>
+        <label for="rm">Masculino</label>
 
+        <input id="rf" type="radio" value="F" name="sexo"/>
+        <label for="rf">Feminino</label>
+
+        <input id="rcm" type="checkbox" value="M" name="sexo"/>
+        <label for="rcm">Masculino</label>
+
+        <input id="rcf" type="checkbox" value="F" name="sexo"/>
+        <label for="rcf">Feminino</label>
+
+        <!-- INPUT: text, hidden, password, radio, checkbox, file -->
+        <!-- TEXTAREA, SELECT, SELECT: MULTIPLE-->
+
+        <!-- NOVA GERAÇÃO -->
+        <!-- INPUT: number, range, date, time, datetime, color, email ... -->
+<!--
+        <label for="busca">Busca</label>
+
+
+
+<textarea name="msg">
+blablab
+xxxx
+yyy
+</textarea>-->
+
+        <input type="color"/>
+
+        <select name="q" id="busca" multiple>
+          <option value="Leão">Girafa</option>
+          <option value="Tostines" selected>Água Oxigenada</option>
+          <option value="Pizza">Tomate</option>
+          <option value="Walking Dead">Walking Dead</option>
+        </select>
+
+
+<!--
         <input  name="q"
+                id="busca"
+                type="date"
                 placeholder="O que você quer?"
+                value="Teste"
                 title="Pode confiar!!!" />
 
         <button>OK</button>
       </form>
 
 
-
+-->
 
 
   </body>
