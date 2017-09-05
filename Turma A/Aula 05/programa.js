@@ -1,5 +1,9 @@
 function iniciar() {
-  /*let teste = document.querySelector("#teste");
+  /*let collection = document.querySelectorAll("input");
+  let array = [...collection];*/
+
+
+/*let teste = document.querySelector("#teste");
   console.log(teste);
   let x = 1 - 2;
   console.log(x);
