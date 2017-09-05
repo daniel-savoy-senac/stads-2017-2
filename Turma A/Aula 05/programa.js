@@ -32,6 +32,7 @@ function iniciar() {
 
 }
 
+// CLOSURE => C++ FUNCTOR
 let f6 = n => x => x+n;
 
 window.addEventListener("load", iniciar);
