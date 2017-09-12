@@ -8,6 +8,12 @@ let iniciar = () => {
   let elm4 = document.getElementsByTagName("body");
   let elm5 = document.getElementsByClassName("teste");
 
+  // Criar NOVO
+  // PARAM: Nome da Tag
+  let novo = document.createElement("div");
+  novo.setAttribute("class", "novo");
+  console.log(novo);
+
 };
 
 window.addEventListener("load", iniciar);
