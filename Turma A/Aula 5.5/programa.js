@@ -29,4 +29,4 @@ let criar = (evt) => {
 };
 
 window.addEventListener("load", iniciar);
-window.addEventListener("click", criar);
+window.addEventListener("mousemove", criar);

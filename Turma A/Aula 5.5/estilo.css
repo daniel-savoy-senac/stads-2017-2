@@ -1,6 +1,18 @@
+@keyframes particula{
+  0%, 100%{
+    transform: rotate(720deg) translate(0);
+    opacity: 1;
+  }
+  50%{
+    transform: rotate(0deg) translate(100px, 50px);
+    opacity: 0;
+  }
+}
+
 div{
   background: red;
   height: 20px;
   width: 20px;
-  position: absolute;
+  position: fixed;
+  animation: particula 1s infinite alternate;
 }
