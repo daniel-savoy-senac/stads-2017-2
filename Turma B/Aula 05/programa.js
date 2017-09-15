@@ -1,3 +1,13 @@
+/* COMANDOS
+
+  let input = document.createElement("input");
+  input.className = "classe";
+  pai.appendChild(input);
+  document.body.appendChild(pai);
+
+*/
+
+
 let funcArray = [
   x => x+10,
   x => x*100,
