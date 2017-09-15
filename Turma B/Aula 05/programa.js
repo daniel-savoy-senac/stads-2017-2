@@ -1,13 +1,30 @@
+let funcArray = [
+  x => x+10,
+  x => x*100,
+  x => x**2,
+  x => x**3
+];
+
 function iniciar() {
-  let teste = document.querySelector("input#teste");
+  let btn = document.querySelector("button:nth-of-type(1)");
+  btn.addEventListener("click", calcular);
+}
 
-  let x = "HHAH'AHAH";
-  let y = 'HHAH ${x} AHAH';
-  let z = `HHAH ${x} AHAH`;
+function calcular(){
+  let seletor = document.querySelector("select");
+  let funcIndex = seletor.value;
+  let func = funcArray[funcIndex];
 
-  teste.value = z;
+  let ins = document.querySelectorAll(".in");
+  let outs = document.querySelectorAll(".out");
 
-  console.log(teste.value);
+  let inArray = [...ins];
+  let values = inArray.map(i => Number(i.value));
+  let resultados = values.map(func);
+
+  outs.forEach((o, i) => o.value = resultados[i]);
+
+  console.log(resultados);
 }
 
 window.addEventListener("load", iniciar);
