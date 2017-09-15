@@ -1,9 +1,13 @@
 function iniciar() {
-  let teste = document.querySelector("#teste");
+  let teste = document.querySelector("input#teste");
+
   let x = "HHAH'AHAH";
   let y = 'HHAH ${x} AHAH';
   let z = `HHAH ${x} AHAH`;
-  console.log(y);
+
+  teste.value = z;
+
+  console.log(teste.value);
 }
 
 window.addEventListener("load", iniciar);
