@@ -14,7 +14,34 @@ function criar(){
   let inputOut = document.createElement("input");
   let label = document.createElement("label");
 
-  //Attributos
+  // ID
+  let letra = letras[counter++ % letras.length];
+  let id = "in"+letra;
+
+  // Attributos
+  label.setAttribute("for", id);
+  inputIn.setAttribute("id", id);
+  inputIn.setAttribute("type", "number");
+
+  inputIn.setAttribute("class", "in");
+  inputOut.setAttribute("class", "out");
+  inputOut.setAttribute("disabled", true);
+
+  label.textContent = letra+":";
+
+  // Ir para Tela
+  div.appendChild(label);
+  div.appendChild(inputIn);
+  div.appendChild(inputOut);
+
+  document.body.appendChild(div);
+
+/*
+  inputIn.className = "in feio anos80";
+  inputIn.classList.add("in");
+  inputIn.classList.remove("feio");
+  inputIn.classList.toggle("anos80");
+*/
 
 }
 
