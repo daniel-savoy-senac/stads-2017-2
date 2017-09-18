@@ -1,9 +1,8 @@
-const letras = ["A","B","C","D","E","F","G","H","I","J","K","L","M"];
+const letras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","X","Y","W","Z"];
 let counter = 0;
 
 function main(){
   let novoBtn = document.querySelector("button:last-child");
-  console.log(novoBtn);
   novoBtn.addEventListener("click", criar);
 }
 
