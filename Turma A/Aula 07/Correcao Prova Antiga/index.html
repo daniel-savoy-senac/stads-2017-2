@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Sistema ABC</title>
+  <link href="principal.css" rel="stylesheet" type="text/css" />
+  <script src="programa.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logotipo"></div>
+    <h1>Cadastro</h1>
+  </header>
+  <div class="mensagem alerta"></div>
+  <form action="inserir.jsp" class="pessoal" method="get">
+    <fieldset class="cadastro pessoal">
+      <legend>Dados Pessoais</legend>
+      <div class="campo obrigatorio">
+        <label for="nome">Primeiro Nome</label>
+        <input type="text" id="nome" name="fname" placeholder="Nome" />
+      </div>
+      <div class="campo opcional">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="surname" />
+      </div>
+      <div class="campo obrigatorio">
+        <label for="nascimento">Data de Nascimento</label>
+        <input type="date" id="nascimento" name="birth" />
+      </div>
+    </fieldset>
+    <div class="btns">
+      <button type="reset">Cancelar</button>
+      <button type="button">Adicionar</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+  <div id="lista" class="listagem"></div>
+</body>
+
+</html>
