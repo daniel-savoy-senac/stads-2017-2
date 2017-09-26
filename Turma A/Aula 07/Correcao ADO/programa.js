@@ -7,12 +7,11 @@ let sorts = {
   "UY" : (a, b) => b.y > a.y ? 1 : b.y < a.y ? -1 : 0
 };
 
-function sortAtual(funcIndex){
-  return () => {
-    order = funcIndex;
-    imprimir();
-  }
-}
+let sortAtual = (funcIndex) => () => {
+  order = funcIndex;
+  imprimir();
+};
+
 
 function imprimir(){
   let listaOrdenada = lista.sort(sorts[order]);
