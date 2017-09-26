@@ -12,7 +12,6 @@ let sortAtual = (funcIndex) => () => {
   imprimir();
 };
 
-
 function imprimir(){
   let listaOrdenada = lista.sort(sorts[order]);
   let items = document.querySelectorAll("p");
