@@ -18,7 +18,7 @@ function criar(){
 }
 
 function limpar(){
-  let inpts = document.querySelectorAll("form [name]");
+  let inpts = document.querySelectorAll("form input");
   for(let i of inpts) i.value = "";
 }
 
