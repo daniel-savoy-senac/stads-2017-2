@@ -12,7 +12,7 @@ public class Inicio extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        /*
         GregorianCalendar cal = new GregorianCalendar();
         int hour = cal.get(Calendar.HOUR_OF_DAY);
         
@@ -22,6 +22,7 @@ public class Inicio extends HttpServlet {
         else if(hour > 12 && hour <= 15) msg = "Bom dia";
         else if(hour > 15 && hour <= 18) msg = "Boa tarde";
         else if(hour > 18 && hour <= 24) msg = "Boa noite";
+        */
         /*
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -33,8 +34,20 @@ public class Inicio extends HttpServlet {
             out.println("</html>");
         }
         */
+        
+        String msg = request.getParameter("msg");
+        
+        // REQUEST CONTEXT
         request.setAttribute("msg", msg);
-        request.setAttribute("hour", hour);
+        
+        // SESSION CONTEXT
+        if(!msg.equals("session")){
+            request.getSession().setAttribute("msgS", msg);
+        }
+        
+        // APPLICATION CONTEXT
+        request.getServletContext().setAttribute("msgA", msg);
+        
         request.getRequestDispatcher("/WEB-INF/main.jspx").forward(request, response);
         
     }
@@ -42,7 +55,8 @@ public class Inicio extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
- 
+        
+        /*
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
@@ -52,6 +66,8 @@ public class Inicio extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+        */
+        response.sendRedirect("resposta.html");
     }
 
 }

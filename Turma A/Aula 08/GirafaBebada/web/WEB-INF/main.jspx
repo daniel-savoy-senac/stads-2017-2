@@ -12,7 +12,9 @@
             <meta charset="utf-8" />
         </head>
         <body>
-            <h1>${msg}</h1>
+            <h1>REQUEST: ${msg}</h1>
+            <h1>SESSION: ${msgS}</h1>
+            <h1>APP: ${msgA}</h1>
         </body>
     </html>
 
