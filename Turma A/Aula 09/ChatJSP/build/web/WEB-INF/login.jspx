@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" 
+          xmlns:c="http://java.sun.com/jsp/jstl/core" 
+          version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
+    
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <title>Sistema de CHAT em JSP</title>
+        </head>
+        <body>
+            <h1>
+                <c:choose>
+                    <c:when test="${agora.hours > 19}">Boa Noite!</c:when>
+                    <c:when test="${agora.hours > 15}">Boa Tarde!</c:when>
+                    <c:when test="${agora.hours > 11}">Bom Dia!</c:when>
+                    <c:when test="${agora.hours > 5}">Boa Manhã!</c:when>
+                    <c:otherwise>Vai dormir!!!</c:otherwise>
+                </c:choose>
+            </h1>
+            <form action="Autenticar" method="post">
+                <label for="username">Seu Apelido</label>
+                <input name="username" id="username" type="text"/>
+                <button type="submit">OK</button>
+            </form>
+        </body>
+    </html>
+
+</jsp:root>
