@@ -1,3 +1,11 @@
+// FETCH
+
+fetch("data.json")
+  .then(r => r.json())
+  .then(j => console.log(j));
+
+/*
+// XHR
 let xhr = new XMLHttpRequest();
 xhr.addEventListener("load", atualizar);
 xhr.open("get","data.json");
@@ -10,4 +18,4 @@ function atualizar(evt){
   clone.msg.push("HAHAHHAHAH");
   let text2 = JSON.stringify(clone);
   console.log(text2);
-}
+}*/
