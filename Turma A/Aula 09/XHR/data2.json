@@ -1,0 +1,25 @@
+{
+  "usuarios":
+  [
+    {"id": 2301, "apelido": "axl_2007", "nome": "Axel Xico", "humor":2},
+    {"id": 4543, "apelido": "liiiia", "nome": "Lia Mara", "humor":1},
+    {"id": 654, "apelido": "jao", "nome": "João César", "humor":0},
+    {"id": 5432, "apelido": "mario", "nome": "Mario Mario", "humor":3}
+  ],
+  "humores":
+  [
+    {"tipo": "FELIZ", "texto": "Estou feliz!"},
+    {"tipo": "TRISTE", "texto": "Arghhhh!"},
+    {"tipo": "SONO", "texto": "ZZZZZzzzzz...."},
+    {"tipo": "1UP", "texto": "Mama mia!"}
+  ],
+  "mensagens": [
+    {"tempo": "2017-10-10 21:34:56:040", "usuario": 654, "texto": "Olá"},
+    {"tempo": "2017-10-10 21:34:57:234", "usuario": 2301, "texto": "Meu!"},
+    {"tempo": "2017-10-10 21:34:58:142", "usuario": 4543, "texto": "Oie!!"},
+    {"tempo": "2017-10-10 21:34:58:430", "usuario": 654, "texto": "Oie!! Kkkkk"},
+    {"tempo": "2017-10-10 21:34:59:001", "usuario": 5432, "texto": "Luigi!"},
+    {"tempo": "2017-10-10 21:35:00:043", "usuario": 654, "texto": "Hã?"}
+  ],
+  "sala": {"nome": "Conversa Aleatória", "temas": "Todos", "id": 25}
+}
