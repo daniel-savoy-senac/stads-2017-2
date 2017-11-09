@@ -1,0 +1,7 @@
+{
+	"nome" : "daniel",
+	"valores" : [12, 34, 56, 1],
+	"outros" : {
+		"valores" : [1 ,2, 3]
+	}
+}
