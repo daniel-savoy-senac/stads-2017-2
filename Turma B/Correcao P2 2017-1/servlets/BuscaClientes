@@ -1,0 +1,8 @@
+{
+  "nome" : "João Silva",
+  "nascimento" : "1980-12-10",
+  "CPF" : "99.999.999-99",
+  "id" : 1234,
+  "debitos" : 2000,
+  "creditos" : 45000
+}
